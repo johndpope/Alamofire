@@ -23,6 +23,9 @@
 //
 
 import Foundation
+#if os(Linux)
+import Glibc
+#endif
 
 /// Types adopting the `URLConvertible` protocol can be used to construct URLs, which are then used to construct
 /// URL requests.
